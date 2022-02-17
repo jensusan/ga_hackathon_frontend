@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
 text-align: center;
 background-color: var(--lightPink);
-padding: 80px;
+padding: 100px 250px;
 
 button {
     background-color: var(--darkPink);

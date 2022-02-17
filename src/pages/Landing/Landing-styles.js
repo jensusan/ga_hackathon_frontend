@@ -24,8 +24,8 @@ export const Wrapper = styled.div`
     font-size: 17px;
     cursor: pointer;
     position: absolute;
-    left: 45%;
-    top: 55%;
+    top: 59%;
+    left: 47%;
     
   }
 

@@ -65,13 +65,14 @@ const EventDetails = () => {
 			</div>
 			</div>
 			</div>
-
+			<div className='link-btns'>
 			<button onClick={() => navigate(`/events/${event._id}/edit`)}>
         Update
       </button>
       <button onClick={() => handleDeleteEvent(event._id)}>
         Delete
       </button>
+	  </div>
 
 			<AttendeeSection
 				event={event}
