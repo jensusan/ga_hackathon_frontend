@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom'
 import UpdateForm from './UpateForm'
 import { updateEvent, getEventById } from '../../services/eventService'
+import {Wrapper} from '../CreateEvent/CreateEvent-styles'
 
 const UpdateEvent = (props) => {
   const navigate = useNavigate()
@@ -35,6 +36,7 @@ const UpdateEvent = (props) => {
   console.log(formData);
 
   return (
+    <Wrapper>
     <UpdateForm
       handleChange={handleChange}
       handleUpdateEvent={handleUpdateEvent}
@@ -43,6 +45,7 @@ const UpdateEvent = (props) => {
       formData={formData}
       setFormData={setFormData}
     />
+    </Wrapper>
   )
 
 }

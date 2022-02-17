@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import moment from 'moment';
+import {Wrapper} from '../CreateEvent/EventForm-styles'
 
 const UpdateForm = ({
 	handleChange,
@@ -17,7 +18,7 @@ const UpdateForm = ({
 	}, [formData]);
 
 	return (
-		<div>
+		<Wrapper>
 			<h1>Update Event</h1>
 			<form onSubmit={e => handleUpdateEvent(e)} ref={formElement}>
 				<label>Event Name: </label> <br />
@@ -72,7 +73,7 @@ const UpdateForm = ({
 					Update Event
 				</button>
 			</form>
-		</div>
+		</Wrapper>
 	);
 };
 
