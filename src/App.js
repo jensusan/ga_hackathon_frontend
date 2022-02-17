@@ -68,7 +68,7 @@ const App = () => {
 			)}
 
 			<Routes>
-				<Route path="/" element={<Landing user={user} />} />
+				<Route path="/" element={<Landing user={user} handleShowSignup={handleShowSignup}/>} />
 				<Route
 					path="/signup"
 					element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
@@ -79,8 +79,8 @@ const App = () => {
 				/>
 				<Route path="/dashboard" element={<Dashboard />} />
 				<Route path="/newEvent" element={<CreateEvent />} />
-        <Route exact path="/events/:id/edit" element={<UpdateEvent />}/>
-        <Route exact path="/events/:id" element={<EventDetails />} />
+        		<Route exact path="/events/:id/edit" element={<UpdateEvent />}/>
+        		<Route exact path="/events/:id" element={<EventDetails />} />
 			</Routes>
 			<Footer />
 		</>
