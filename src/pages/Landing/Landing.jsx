@@ -9,9 +9,11 @@ const Landing = ({ user, handleShowSignup }) => {
       <h1>
         Keep track of split costs with ease
       </h1>
-      <img src={hero_photo} alt='calculator'/>
+      <div className="image-conatiner">
+        <img src={hero_photo} alt='calculator'/>
       
-      <button onClick={handleShowSignup}>Start</button>
+        <button onClick={handleShowSignup}>Start</button>
+      </div>
       
     </main>
     </Wrapper>

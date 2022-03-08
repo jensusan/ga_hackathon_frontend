@@ -11,9 +11,12 @@ export const Wrapper = styled.div`
     font-weight: 400;
   }
 
+  .image-conatiner {
+    position: relative;
+  }
+
   img {
     height: 350px;
-    position: relative;
   }
 
   button {
@@ -24,9 +27,9 @@ export const Wrapper = styled.div`
     font-size: 17px;
     cursor: pointer;
     position: absolute;
-    top: 59%;
-    left: 47%;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media screen and (max-width: 500px) {
